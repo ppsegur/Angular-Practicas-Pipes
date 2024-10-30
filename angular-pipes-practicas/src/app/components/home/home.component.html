@@ -1,0 +1,16 @@
+<strong><h1>Pipes de texto</h1></strong>
+<p> título mayuscula {{ texto | uppercase }}</p>
+<p> título minúscula {{ texto | lowercase }}</p>
+<hr>
+<strong><h1>Pipes de números muy util para monedas</h1></strong>
+<p>Pipe currency standar {{precio | currency: 'EUR': "Eur"}}</p>
+<hr>
+<strong><h1>Pipes para formato de fechas</h1></strong>
+<p>Fecha actual {{ fecha | date: 'fullDate' }}</p> <!-- Fecha actual Saturday, December 12, 2020 -->
+<p>Date Pipe {{fecha | date:'shortDate'}}</p>
+
+<p>Percet Pipe {{porcentaje | percent}}</p>
+
+<!--Uso del pipe personalizado -->
+<h1>{{porcentaje | customEur }}</h1>
+<p>{{customEurValue |  customEur }}</p>
